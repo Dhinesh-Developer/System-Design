@@ -1,0 +1,11 @@
+What is throughput ?
+    - Throughput means :
+        - How much work the system can process per unit of time.
+Ex:
+
+1000 requests/sec
+500 database transactions/sec
+10,000 messages/sec
+
+RPS is one type of throughput measurement.
+

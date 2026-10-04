@@ -1,0 +1,11 @@
+RPS
+ - Request per second
+  1000 RPS
+ means -> 1000 Requests per second
+
+QPS
+ - Queries per second
+
+ Often used for database/query workloads
+    
+

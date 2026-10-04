@@ -1,0 +1,36 @@
+what is latency?
+    - latency is how long one Request takes to receive a response
+
+Ex: 
+ Request
+   ↓
+Server
+   ↓
+Response
+
+Time = 120 ms
+
+this is latency
+
+---------------------------------------------------------
+Why P95?
+Average can hide bad requests.
+
+Suppose:
+20 ms
+20 ms
+20 ms
+20 ms
+5000 ms
+
+Average isn't telling you the whole story.
+
+In system design you'll commonly hear:
+P50
+P95
+P99
+
+Meaning roughly:
+P50 → median user experience
+P95 → 95% of requests are at or below this latency
+P99 → 99% of requests are at or below this latency
