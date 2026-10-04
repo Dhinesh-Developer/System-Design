@@ -1,0 +1,32 @@
+Stateless vs Stateful Services
+
+This is extremely important.
+
+Stateless:
+-----------
+
+The server does not remember client information locally.
+Request → Server 1
+Request → Server 2
+Request → Server 3
+
+Any server can handle the Request
+
+
+
+Stateful:
+----------
+
+The server remembers something locally.
+User → Server 1
+
+Server 1 remembers:
+user = Dhinesh
+cart = 5 items
+
+If the next request goes to Server 2:
+
+User → Server 2
+
+Server 2:
+"I don't know this user's state."
