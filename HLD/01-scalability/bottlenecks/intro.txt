@@ -1,0 +1,15 @@
+What is bottleneck?
+- A bottleneck is the slowest/ most constrained part of your system 
+that limits overall preformance
+
+Ex: 
+Users
+  ↓
+Load Balancer
+  ↓
+Application Servers
+  ↓
+Database ← BOTTLENECK
+
+Adding 100 Application servers won't necessarily help if one database can 
+only process 1,000 requests/sec.

@@ -1,0 +1,12 @@
+What is load balancer?
+
+it distributes incoming requests among servers
+
+             ┌── Server 1
+Users → LB ──┼── Server 2
+             └── Server 3
+
+Common algorithms include:
+- round robin
+- least connections
+- weighted round robin
