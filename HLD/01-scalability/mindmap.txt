@@ -1,0 +1,41 @@
+                    TRAFFIC
+                       │
+                       ▼
+                Capacity Estimate
+                       │
+                       ▼
+                QPS / RPS
+                       │
+                       ▼
+              Can one server handle it?
+                  /             \
+                YES              NO
+                 │                │
+                 ▼                ▼
+             Vertical       Horizontal
+              Scaling          Scaling
+                                  │
+                                  ▼
+                           Load Balancer
+                                  │
+                    ┌─────────────┼─────────────┐
+                    ▼             ▼             ▼
+                 Server 1      Server 2      Server 3
+                    │             │             │
+                    └─────────────┼─────────────┘
+                                  │
+                                  ▼
+                              Database
+                                  │
+                                  ▼
+                              Bottleneck?
+
+And measure:
+
+RPS/QPS
+   ↓
+Throughput
+   ↓
+Latency
+   ↓
+Capacity
