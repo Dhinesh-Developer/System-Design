@@ -1,0 +1,19 @@
+mkdir fastapi-hld
+cd fastapi-hld
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install fastapi uvicorn
+
+check:
+python --version
+
+Run:
+uvicorn main:app --reload
+
+open:
+http://127.0.0.1:8000
+
+FastAPI automatically provides API documentation:
+http://127.0.0.1:8000/docs

@@ -1,0 +1,19 @@
+REST API:
+---------
+
+what is REST:
+    - REST is an architectural style for designing APIs around resources
+
+for example, suppose we have users:
+/users
+
+Operations:
+GET     /users
+GET     /users/10
+POST    /users
+PUT     /users/10
+DELETE  /users/10
+
+Think:
+Resource = user
+/users
