@@ -1,0 +1,12 @@
+capacity Estimation:
+
+capacity Estimation means:
+ - Before designing the system, estimate how much traffic/storage/resources you need.
+
+typical questions?
+1. how many Users
+2. how many requests/day?
+3. How many requests/second?
+4. How many data/day?
+5. How much storage/year?
+
