@@ -1,0 +1,17 @@
+1. Vertical Scaling
+What is it?
+Vertical scaling means:
+
+Make one server more powerful.
+
+Before:
+
+Server
+2 CPU
+4 GB RAM
+
+        ↓ Vertical Scaling
+
+Server
+8 CPU
+16 GB RAM
