@@ -1,0 +1,7 @@
+What is it?
+Instead of making one server stronger:
+Add more servers.
+
+              ┌── Server 1
+Users → LB ───┼── Server 2
+              └── Server 3

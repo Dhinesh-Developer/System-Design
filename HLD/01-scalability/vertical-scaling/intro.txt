@@ -15,3 +15,28 @@ Server
 Server
 8 CPU
 16 GB RAM
+
+Important idea
+
+Vertical scaling:
+ONE SERVER
+    ↓
+More CPU
+More RAM
+Faster hardware
+
+Limitation
+
+There is a physical limit.
+You cannot keep doing:
+
+8 GB
+16 GB
+32 GB
+64 GB
+128 GB
+...
+
+forever.
+
+That's where horizontal scaling becomes important.
