@@ -1,0 +1,8 @@
+Authentication asks:
+    - Who are you?
+
+common approaches:
+    1. session
+    2. API key
+    3. JWT
+    4. OAuth 2.0
