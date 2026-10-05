@@ -1,0 +1,21 @@
+RBAC = Role- based access control
+
+Instead of saying:
+    - Dhinesh can do X
+we define :
+    role -> permission
+
+Example :
+ 
+ADMIN
+ ├── create user
+ ├── delete user
+ ├── update user
+ └── view reports
+
+USER
+ ├── view profile
+ └── create order 
+
+
+
