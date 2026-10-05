@@ -1,0 +1,13 @@
+API's change:
+
+Suppose you initially create:
+/api/v1/users
+
+Later you make breaking changes.
+Don't suddenly break existing clients
+
+create:
+/api/v2/users
+
+
+
