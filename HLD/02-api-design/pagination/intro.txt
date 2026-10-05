@@ -1,0 +1,9 @@
+imaging:
+ - 10 million users
+
+you should not return:
+    GET /users
+
+instead:
+    GET /users?page=1&limit=20
+
