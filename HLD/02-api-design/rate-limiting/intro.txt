@@ -1,0 +1,38 @@
+
+What is rate limiting :
+    - Rate limiting controls:
+     - How many requests can a client make within a certain period?
+Ex:
+    100 requests/minute
+
+    if client sends:
+        - 101st requests
+    server can respond:
+        402 Too manu requests    
+
+why do we need it?
+ - Without rate limiting
+
+Attacker
+   |
+   | 1,000,000 requests
+   v
+API
+   |
+   v
+Database
+   |
+   💥
+
+with rate limiting:
+--------------------
+
+  Attacker
+   |
+   | 1,000 requests
+   v
+Rate Limiter
+   |
+   +---- allowed
+   |
+   +---- blocked  
