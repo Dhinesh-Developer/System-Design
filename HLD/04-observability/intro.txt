@@ -1,0 +1,33 @@
+What is Observability:
+---------------------
+ Observability is how you understand what is happening inside your system
+ when users interact with it.
+
+cheat sheet:
+-----------
+1. Logs => What happened?
+2. Metrics => How much/how often?
+3. Traces => Where did the request go?
+4. Monitoring => is the system healthy?
+5. Health checks => Is this service alive/ready?
+5. Request Id => Which logs belong to this request?
+
+
+                    USER
+                     |
+                     v
+                FastAPI App
+                     |
+        +------------+------------+
+        |            |            |
+        v            v            v
+      Logs        Metrics       Traces
+        |            |            |
+        |            v            v
+        |        Prometheus   OpenTelemetry
+        |            |            |
+        |            v            v
+        |         Grafana      Trace Backend
+        |
+        v
+   Application Logs
