@@ -1,0 +1,41 @@
+                           INTERNET
+                               |
+                               |
+                          HTTPS / TLS
+                               |
+                               v
+                        API Gateway
+                               |
+                               v
+                       RATE LIMITING
+                               |
+                               v
+                       Authentication
+                               |
+                         JWT / OAuth2
+                               |
+                               v
+                       Authorization
+                               |
+                            RBAC
+                               |
+                  +------------+------------+
+                  |                         |
+                  v                         v
+              Application              Database
+                  |                         |
+                  |                         |
+                  v                         v
+                Redis                 Password Hashes
+                  |
+                  |
+                  v
+            Rate Limit Counters
+
+
+              Secrets / Environment
+                       |
+          +------------+------------+
+          |            |            |
+        JWT         DB Password   API Keys
+        Secret

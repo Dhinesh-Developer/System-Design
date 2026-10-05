@@ -1,0 +1,12 @@
+Why Hash passwords?
+ - Never store:
+    username = dhinesh
+    password = secret123
+in production.
+
+instead:
+password -> Hashing password -> password hash -> database
+
+when user logs in:
+entered password -> password verification -> stored hash
+
