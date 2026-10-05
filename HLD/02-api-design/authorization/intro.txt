@@ -1,0 +1,27 @@
+What is Authorization:
+---------------------
+
+Authorization means:
+    - what are you allowed to do?
+
+Authentication: Who are you?
+Authorization: What can yu do?
+
+Ex:
+Dhinesh → authenticated
+
+Dhinesh → user role
+
+Can delete another user?
+        ↓
+       NO
+
+Admin:
+
+Admin → authenticated
+
+Admin → admin role
+
+Can delete user?
+        ↓
+       YES

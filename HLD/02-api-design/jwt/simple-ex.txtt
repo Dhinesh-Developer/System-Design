@@ -1,0 +1,18 @@
+understanding JWT PAYLOAD
+
+A simplified payload might contains:
+
+{
+    "sub":"101",
+    "role":"user",
+    "exp": 1000
+}
+
+Meaning:
+
+    sub -> user identifier
+    role -> user role
+    exp -> expiration time
+
+->Tips: JWT payload is encoded,not a place to put secrets
+

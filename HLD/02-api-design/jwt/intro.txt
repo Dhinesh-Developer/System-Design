@@ -1,0 +1,45 @@
+What is JWT?
+
+JWT = json web token
+- it is commonly used to represent authenticated identify/claims between
+a client and server.
+
+typical flow:
+------------
+
+Login
+  |
+  v
+Server
+  |
+  | creates token
+  v
+JWT
+  |
+  v
+Client
+
+Later:
+-------
+
+Client
+  |
+  | Authorization: Bearer <token>
+  v
+Server
+  |
+  v
+Validate token
+  |
+  v
+Allow / Reject
+
+
+
+A JWT has three parts:
+
+HEADER.PAYLOAD.SIGNATURE
+
+Ex:
+xxxxxx.yyyyyy.zzzzzzz
+
