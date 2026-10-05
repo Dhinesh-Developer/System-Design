@@ -1,0 +1,44 @@
+What problem does caching solve?
+
+without cache:
+
+Client
+  ↓
+FastAPI
+  ↓
+Database
+  ↓
+Response
+
+Every request hits the Database
+
+With cache:
+----------
+Client
+  ↓
+FastAPI
+  ↓
+Redis
+  │
+  ├── HIT → return immediately
+  │
+  └── MISS → Database
+                 ↓
+               Redis
+                 ↓
+              Response
+
+caching can reduce:
+-database load
+- response latency
+- expensive computation
+- repeated network calls
+
+but caching introduces problem too:
+- stale data
+- memory cost
+- cache invalidation
+- cache stampede
+- Hot keys
+
+

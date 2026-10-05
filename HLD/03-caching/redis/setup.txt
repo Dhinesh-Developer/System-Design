@@ -1,0 +1,32 @@
+0. Setup — FastAPI + Redis
+Step 1 — Install Python packages
+
+Inside your virtual environment:
+
+pip install fastapi uvicorn redis
+
+Check:
+
+python -c "import redis; print(redis.__version__)"
+Step 2 — Install/start Redis on Ubuntu
+
+If Redis isn't installed:
+
+sudo apt update
+sudo apt install redis-server
+
+Start it:
+
+sudo systemctl start redis-server
+
+Check:
+
+redis-cli ping
+
+Expected:
+
+PONG
+
+Check status:
+
+sudo systemctl status redis-server
