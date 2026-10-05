@@ -1,0 +1,27 @@
+An operation is idempotent id:
+    - Performing the same operation multiple times produces the same final result.
+
+Ex:
+GET - generally idempotent
+PUT - generally idempotent
+DELETE - generally idempotent
+
+POST -> generally NOT idempotent
+
+Example 1 — Idempotent PUT
+
+Suppose:
+
+PUT /users/10
+
+sets:
+
+name = Dhinesh
+
+Doing it once:
+
+Dhinesh
+
+Doing it five times:
+
+Dhinesh
