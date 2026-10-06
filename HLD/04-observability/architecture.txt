@@ -1,0 +1,29 @@
+                    USER
+                      |
+                      v
+                Load Balancer
+                      |
+                      v
+                  FastAPI
+                      |
+        +-------------+-------------+
+        |             |             |
+        v             v             v
+      Logs         Metrics        Traces
+        |             |             |
+        |             v             v
+        |        Prometheus    OpenTelemetry
+        |             |             |
+        |             v             v
+        |          Grafana      Trace Backend
+        |
+        v
+   Log Platform
+
+                  +----------------+
+                  | Health Checks  |
+                  +----------------+
+
+                  +----------------+
+                  | Request ID     |
+                  +----------------+

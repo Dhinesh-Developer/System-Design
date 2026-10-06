@@ -1,0 +1,11 @@
+| Tool          | Main Question           | Example               |
+| ------------- | ----------------------- | --------------------- |
+| Logs          | What happened?          | Payment failed        |
+| Metrics       | How much/how often?     | 5% errors             |
+| Traces        | Where did time go?      | Payment took 750ms    |
+| Monitoring    | Is system healthy?      | Error rate increased  |
+| Health Check  | Is service alive/ready? | DB unavailable        |
+| Request ID    | Which request?          | REQ-123               |
+| Prometheus    | Collect metrics         | `http_requests_total` |
+| Grafana       | Visualize metrics       | Latency dashboard     |
+| OpenTelemetry | Collect telemetry       | traces/metrics/logs   |
