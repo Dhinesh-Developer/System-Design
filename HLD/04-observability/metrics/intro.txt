@@ -1,0 +1,16 @@
+What are metrics?
+    - metrics are numbers measured over time.
+
+Ex:
+
+Requests/sec  = 500
+Error rate = 2%
+CPU usage = 72%
+Memory usage = 65%
+Latency = 150 ms 
+Activate users = 10000
+
+Logs tell you:
+    - Something happened.
+Metrics tell you:
+    - How much/how often?    
