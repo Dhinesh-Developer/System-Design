@@ -1,0 +1,40 @@
+What is distributed tracing?
+    - Suppose one request travels through multiple services.
+
+Client
+  |
+  v
+API Gateway
+  |
+  v
+User Service
+  |
+  v
+Order Service
+  |
+  v
+Payment Service
+  |
+  v
+Database
+
+
+the user says:
+    - "checkout is taking 5 seconds"
+Logs may show thousands of lines.
+
+Metrics may say:
+    - Average latency = 5 seconds
+
+But tracing can show:
+
+Total request = 5 seconds
+1. API Gateway = 20 ms 
+2. User service = 50 ms 
+3. Order service = 100 ms
+4. Payment service = 4800 <-- problem
+5. Database = 30 ms 
+
+That's the power of tracing
+
+
