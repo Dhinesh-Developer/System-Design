@@ -1,0 +1,31 @@
+What is Monitoring?
+
+Monitoring means continuously watching the health and 
+performance of our system.
+
+Imagine :
+
+Application
+     |
+     v
+Metrics
+     |
+     v
+Prometheus
+     |
+     v
+Grafana
+     |
+     v
+Dashboard
+
+you might monitor:
+
+CPU
+Memory
+Requests
+Latency
+Errors
+Database connections
+Cache hit rate
+Disk usage

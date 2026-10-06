@@ -1,0 +1,27 @@
+Health checks:
+    - Is this service working ?
+
+There are two important concepts:
+    - Liveness
+    - Readliness
+
+Liveness
+    - is the application alive?
+Ex:
+    GET /health/live 
+
+   Response :
+    {
+        "status":"alive"
+    }     
+
+Readliness:
+
+    - is the application ready to receive traffic?
+Ex :
+Application running
+      |
+      +-- Database ❌
+      |
+      +-- Redis ✅ 
+

@@ -1,0 +1,20 @@
+Example 1 — Basic monitoring
+
+Suppose:
+
+Requests = 1000
+Errors = 50
+
+Error rate:
+
+50 / 1000 × 100 = 5%
+
+If your normal error rate is:
+
+0.2%
+
+and suddenly becomes:
+
+5%
+
+something is probably wrong.
