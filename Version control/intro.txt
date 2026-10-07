@@ -1,0 +1,61 @@
+
+Version control:
+---------------
+    in single term, VCS track changes to file over time, so that we can manage history and restore older states when required.
+
+GIT -> is a distributed.
+
+git != github
+
+Git => distributed version control system
+    - Even without github/gitlab etc. we can fetch,pull, push changes of git repository, from 1 machine to another.
+    Git repo on machine A ============== SSH ==================== Git repo on machine B
+    EX: git clone ssh://user@MachineA/home/project.payment-app
+
+
+So Github provides:
+-----------------
+1- Collaboration: Multiple developer can work together on same repository safely.
+2- Synchronization: Act as a common place to push and pull shared changes between developers
+3- Backup - stores complete repository
+4- Pull request - allow developers to propose,discuu, review and merge code changes safely, internally github also run git command like git merge etc.
+5- CI/CD - Automatically builds, test and deploy code whenever changes are published.
+
+
+Git configuration:
+------------------
+System  => whatever the configuration will be set, that will be applicable to all users in a machine and their all git repos.
+global => whatever the configuration will be set, that will be applicable to current user only in a machine and all of its git repos
+local => whatever the configuration will be set, that will be applicable to one specific git repository
+
+what is Git Repo:
+----------------
+- in simple term, a repo which is managed by GIT, is known as git repo.
+
+- "git init" -> means , we are asking git to track and manage our project history. it creates ".git/" folder inside our project.
+
+
+But git repo is now ready to:
+---------------------------
+- track files
+- version changes
+- maintain history
+
+
+what all config we can set?
+----------------------------
+
+git config --local user.name "dhinesh-developer"
+git config --local user.email "example@gmail.com"
+
+git add. and git commit :
+---------------------
+adding all files in current directory to git.
+
+git log -n1:
+-----------
+ -> check the status of last commit added to git.
+ 
+----------------------------------------------------------------------------------------------------------------------------- 
+
+
